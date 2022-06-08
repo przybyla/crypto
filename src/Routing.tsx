@@ -1,5 +1,5 @@
 import { lazy, Suspense } from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, Navigate } from "react-router-dom";
 import CircularProgress from "@mui/material/CircularProgress";
 import styled from "styled-components";
 
@@ -10,7 +10,9 @@ const Routing = () => (
   <Container>
     <Suspense fallback={<CircularProgress />}>
       <Routes>
-        <Route path="/" element={<CoinList />} />
+        <Route path="*" element={<Navigate replace to="/crypto" />} />
+
+        <Route path="crypto/" element={<CoinList />} />
         <Route path="/coin/:coinId" element={<CoinDetails />} />
       </Routes>
     </Suspense>

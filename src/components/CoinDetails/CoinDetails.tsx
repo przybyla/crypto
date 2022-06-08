@@ -37,7 +37,7 @@ const CoinDetails = () => {
     <Wrapper>
       <div className="coin-details-header">
         <Breadcrumbs aria-label="breadcrumb" className="breadcrumb">
-          <Link to="/">List</Link>
+          <Link to="/crypto">List</Link>
           <Typography>{coinDetails?.name}</Typography>
         </Breadcrumbs>
         <Stack spacing={2} direction="row">
