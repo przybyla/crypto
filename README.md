@@ -2,6 +2,8 @@
 ## General info
 Simple crypto list app with some details about every crypto, using CoinGeco API
 
+[DEMO](https://przybyla.github.io/crypto/)
+
 ## Technologies
 Project is created with:
 * Create React App
